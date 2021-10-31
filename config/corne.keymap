@@ -30,12 +30,12 @@
 // -----------------------------------------------------------------------------------------
 // |  `   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |   -  |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |  UP |     |     |      |
-// |LSHFT |     |     |     |     |     |   |     | LFT | DWN | RGT |     |      |
+// |LSHFT |     |     |     |     |     |   |     | LFT | DWN | RGT |     |RSHFT |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp GRAVE  &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8   &kp N9    &kp N0 &kp MINUS
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &trans   &kp UP   &trans    &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &kp LEFT &kp DOWN &kp RIGHT &trans &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &kp LEFT &kp DOWN &kp RIGHT &trans &kp RSHFT
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
@@ -43,27 +43,16 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  F1  |  F2 | F3  | F4  | F5  |  F6  |   |  F7 | F8  |  F9 | F10 | F11 | F12  |
-// | CTRL |     |     | END | DEL |SYSREQ|   |HOME |PG_DN|PG_UP|     |     |      |
-// | SHFT |     |  *  |  #  |  ~  |  <   |   |  >  |  ^  |  +  |  |  |  =  |      |
+// | BSPC |     |     | END | DEL |SYSREQ|   |HOME |PG_DN|PG_UP|     |     |      |
+// |LSHFT |     |  *  |  #  |  ~  |  <   |   |  >  |  ^  |  +  |  |  |  =  |RSHFT |
 //                    | GUI |     | SPC  |   | ENT |     | ALT |
                         bindings = <
    &kp  F1   &kp F2 &kp F3           &kp F4   &kp F5     &kp F6     &kp F7    &kp F8     &kp F9     &kp F10   &kp F11   &kp F12
-   &kp LCTRL &trans &trans           &kp END  &kp DEL    &kp SYSREQ &kp HOME  &kp PG_DN  &kp PG_UP  &trans    &trans    &trans
-   &kp LSHFT &trans &kp KP_MULTIPLY  &kp HASH &kp TILDE  &kp LT     &kp GT    &kp CARET  &kp PLUS   &kp PIPE  &kp EQUAL &trans
-                                     &kp LGUI &trans     &kp SPACE  &kp RET   &trans     &kp RALT
+   &kp BSPC  &trans &trans           &kp END  &kp DEL    &kp SYSREQ &kp HOME  &kp PG_DN  &kp PG_UP  &trans    &trans    &trans
+   &kp LSHFT &trans &kp KP_MULTIPLY  &kp HASH &kp TILDE  &kp LT     &kp GT    &kp CARET  &kp PLUS   &kp PIPE  &kp EQUAL &kp RSHFT
                         >;
                 };
 
         };
         
 };
-// {
-//    combos {
-//        compatible = "zmk,combos";
-//       combo_layer {
-//           timeout-ms = <50>;
-//           key-positions = <38 41>;
-//           bindings = <&mo 3>;
-//        };
-//   };
-//};
