@@ -14,15 +14,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB   |  Q  |  W  |  E  |  R  |  T  |   |    Y     |  U   |  I  |  O  |  P  |LBKT/ü |
-// |BSPC/ESC|  A  |  S  |  D  |  F  |  G  |   |    H     |  J   |  K  |  L  | ;/ö |  '/ä  |
-// | LSHFT  |  Z  |  X  |  C  |  V  |  B  |   |    N     |  M   |  ,  |  .  |  -  | RSHFT |
-//                      | LWR | SPC | GUI |   |ENTR/RCTRL| RALT | RSE |
+// |  TAB   |  Q  |  W  |  E  |  R  |  T  |   |  Y   |  U   |  I  |  O  |  P  |LBKT/ü |
+// |BSPC/ESC|  A  |  S  |  D  |  F  |  G  |   |  H   |  J   |  K  |  L  | ;/ö |  '/ä  |
+// | LSHFT  |  Z  |  X  |  C  |  V  |  B  |   |  N   |  M   |  ,  |  .  |  -  | RCTRL |
+//                      | LWR | SPC | GUI |   | ENTR | RALT | RSE |
                         bindings = <
-   &kp TAB       &kp Q &kp W &kp E  &kp R     &kp T        &kp Y           &kp U    &kp I     &kp O   &kp P     &kp LBKT
-   &mt ESC BSPC  &kp A &kp S &kp D  &kp F     &kp G        &kp H           &kp J    &kp K     &kp L   &kp SEMI  &kp SQT
-   &kp LSHFT     &kp Z &kp X &kp C  &kp V     &kp B        &kp N           &kp M    &kp COMMA &kp DOT &kp MINUS &kp RSHFT
-                             &mo 1  &kp SPACE &kp LGUI     &mt ENTER RCTRL &kp RALT &mo 2 
+   &kp TAB       &kp Q &kp W &kp E  &kp R     &kp T      &kp Y     &kp U    &kp I     &kp O   &kp P     &kp LBKT
+   &mt ESC BSPC  &kp A &kp S &kp D  &kp F     &kp G      &kp H     &kp J    &kp K     &kp L   &kp SEMI  &kp SQT
+   &kp LSHFT     &kp Z &kp X &kp C  &kp V     &kp B      &kp N     &kp M    &kp COMMA &kp DOT &kp MINUS &kp RCTRL
+                             &mo 1  &kp SPACE &kp LGUI   &kp ENTER &kp RALT &mo 2 
                         >;
                 };
 
@@ -30,13 +30,13 @@
 // -----------------------------------------------------------------------------------------
 // |    `   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  |  -   |
 // |BSPC/ESC| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |      |  UP |     |     |ENTER |
-// | LSHFT  |     |     |BTCLR|     |     |   |     | LFT  | DWN | RGT |     |RSHFT |
+// | LSHFT  |     |     |BTCLR|     |     |   |     | LFT  | DWN | RGT |     |RCTRL |
 //                      |     | SPC | GUI |   |RCTRL| RALT |     |
                         bindings = <
-   &kp GRAVE     &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6          &kp N7   &kp N8   &kp N9    &kp N0 &kp MINUS
-   &mt ESC BSPC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans          &trans   &kp UP   &trans    &trans &kp ENTER
-   &kp LSHFT     &trans       &trans       &bt BT_CLR   &trans       &trans         &trans          &kp LEFT &kp DOWN &kp RIGHT &trans &kp RSHFT
-                          	           &trans       &kp SPACE    &kp LGUI       &mt ENTER RCTRL &kp RALT &trans  
+   &kp GRAVE     &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6    &kp N7   &kp N8   &kp N9    &kp N0 &kp MINUS
+   &mt ESC BSPC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans    &trans   &kp UP   &trans    &trans &kp ENTER
+   &kp LSHFT     &trans       &trans       &bt BT_CLR   &trans       &trans         &trans    &kp LEFT &kp DOWN &kp RIGHT &trans &kp RCTRL
+                          	           &trans       &kp SPACE    &kp LGUI       &kp ENTER &kp RALT &trans  
                         >;
                 };
 
@@ -44,13 +44,13 @@
 // -----------------------------------------------------------------------------------------
 // |   F1   | F2  | F3  |  F4   | F5  |  F6  |   | F7  | F8  |  F9 | F10 | F11 | F12  |
 // |BSPC/ESC|     |     |  END  | DEL |SYSREQ|   |HOME |PG_DN|PG_UP|     |     |ENTER |
-// |  LSHFT |     |  *  |   #   |  ~  |   <  |   |  >  |  ^  |  +  |  |  |  =  |RSHFT |
+// |  LSHFT |     |  *  |   #   |  ~  |   <  |   |  >  |  ^  |  +  |  |  |  =  |RCTRL |
 //                      |       | SPC |  GUI |   |RCTRL|RALT |     |
                         bindings = <
-   &kp  F1       &kp F2 &kp F3           &kp F4     &kp F5     &kp F6       &kp F7          &kp F8     &kp F9     &kp F10   &kp F11   &kp F12
-   &mt ESC BSPC  &trans &trans           &kp END    &kp DEL    &kp SYSREQ   &kp HOME        &kp PG_DN  &kp PG_UP  &trans    &trans    &kp ENTER
-   &kp LSHFT     &trans &kp KP_MULTIPLY  &kp HASH   &kp TILDE  &kp LT       &kp GT          &kp CARET  &kp PLUS   &kp PIPE  &kp EQUAL &kp RSHFT
-                                         &trans     &kp SPACE  &kp LGUI     &mt ENTER RCTRL &kp RALT   &trans     
+   &kp  F1       &kp F2 &kp F3           &kp F4     &kp F5     &kp F6       &kp F7    &kp F8     &kp F9     &kp F10   &kp F11   &kp F12
+   &mt ESC BSPC  &trans &trans           &kp END    &kp DEL    &kp SYSREQ   &kp HOME  &kp PG_DN  &kp PG_UP  &trans    &trans    &kp ENTER
+   &kp LSHFT     &trans &kp KP_MULTIPLY  &kp HASH   &kp TILDE  &kp LT       &kp GT    &kp CARET  &kp PLUS   &kp PIPE  &kp EQUAL &kp RCTRL
+                                         &trans     &kp SPACE  &kp LGUI     &kp ENTER &kp RALT   &trans     
                         >;
                 };
 
