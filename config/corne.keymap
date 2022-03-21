@@ -49,7 +49,7 @@
                         bindings = <
    &kp  F1       &kp F2 &kp F3           &kp F4     &kp F5     &kp F6       &kp F7    &kp F8     &kp F9     &kp F10   &kp F11   &kp F12
    &mt ESC BSPC  &trans &trans           &kp END    &kp DEL    &kp SYSREQ   &kp HOME  &kp PG_DN  &kp PG_UP  &trans    &trans    &kp ENTER
-   &kp LSHFT     &LS(DE_HASH) &kp KP_MULTIPLY  &kp HASH   &kp TILDE  &kp LT       &kp GT    &kp CARET  &kp PLUS   &kp PIPE  &kp EQUAL &kp RCTRL
+   &kp LSHFT     &LS    &kp KP_MULTIPLY  &kp HASH   &kp TILDE  &kp LT       &kp GT    &kp CARET  &kp PLUS   &kp PIPE  &kp EQUAL &kp RCTRL
                                          &trans     &kp SPACE  &kp LGUI     &kp ENTER &kp RALT   &trans     
                         >;
                 };
