@@ -31,29 +31,29 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |    `   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  |  -   |
-// |BSPC/ESC| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |      |  UP |     |     |ENTER |
-// | LSHFT  |     |     |BTCLR|     |     |   |     | LFT  | DWN | RGT |     |RCTRL |
-//                      |     | SPC | GUI |   |RCTRL| RALT |     |
+// | `|  1  |  2  |  3  |  4  |  5  |   | 6 |  7  |  8  |  9  | 0 | - |
+// |  | BT1 | BT2 | BT3 | BT4 | BT5 |   |   |     |  UP |     |   |   |
+// |  |     |     |BTCLR|     |     |   |   | LFT | DWN | RGT |   |   |
+//                |     |     |     |   |   |     |     |
                         bindings = <
-   &kp GRAVE    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5       &kp N6    &kp N7   &kp N8   &kp N9    &kp N0 &kp MINUS
-   &mt ESC BSPC &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans    &trans   &kp UP   &trans    &trans &kp ENTER
-   &kp LSHFT    &trans       &trans       &bt BT_CLR   &trans       &trans       &trans    &kp LEFT &kp DOWN &kp RIGHT &trans &kp RCTRL
-                          	          &trans       &kp SPACE    &kp LGUI     &kp ENTER &kp RALT &trans  
+   &kp GRAVE  &kp N1       &kp N2       &kp N3       &kp N4       &kp N5       &kp N6 &kp N7   &kp N8   &kp N9    &kp N0 &kp MINUS
+   &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans   &kp UP   &trans    &trans &trans
+   &trans     &trans       &trans       &bt BT_CLR   &trans       &trans       &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
+                          	        &trans       &trans       &trans       &trans &trans   &trans  
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |   F1   | F2  | F3  |  F4   | F5  |  F6  |   | F7  | F8  |  F9 | F10 | F11 | F12  |
-// |BSPC/ESC|     |     |  END  | DEL |SYSREQ|   |HOME |PG_DN|PG_UP|     |     |ENTER |
-// |  LSHFT |  '  |  *  |   #   |  ~  |   <  |   |  >  |  ^  |  +  |  |  |  =  |RCTRL |
-//                      |       | SPC |  GUI |   |RCTRL|RALT |     |
+// | F1 | F2  | F3  | F4  | F5  |  F6  |   | F7  | F8  |  F9 | F10 | F11 | F12 |
+// |    |     |     | END | DEL |SYSREQ|   |HOME |PG_DN|PG_UP|     |     |     |
+// |    |  '  |  *  |  #  |  ~  |   <  |   |  >  |  ^  |  +  |  |  |  =  |LCTRL|
+//                  |     |     |      |   |     |     |     |
                         bindings = <
-   &kp  F1      &kp F2      &kp F3          &kp F4    &kp F5     &kp F6     &kp F7    &kp F8    &kp F9    &kp F10  &kp F11   &kp F12
-   &mt ESC BSPC &trans      &trans          &kp END   &kp DEL    &kp SYSREQ &kp HOME  &kp PG_DN &kp PG_UP &trans   &trans    &kp ENTER
-   &kp LSHFT    &kp DE_QUOT &kp KP_MULTIPLY &kp HASH  &kp TILDE  &kp LT     &kp GT    &kp CARET &kp PLUS  &kp PIPE &kp EQUAL &kp RCTRL
-                                            &trans    &kp SPACE  &kp LGUI   &kp ENTER &kp RALT  &trans     
+   &kp  F1 &kp F2      &kp F3          &kp F4    &kp F5     &kp F6     &kp F7    &kp F8    &kp F9    &kp F10  &kp F11   &kp F12
+   &trans  &trans      &trans          &kp END   &kp DEL    &kp SYSREQ &kp HOME  &kp PG_DN &kp PG_UP &trans   &trans    &trans
+   &trans  &kp DE_QUOT &kp KP_MULTIPLY &kp HASH  &kp TILDE  &kp LT     &kp GT    &kp CARET &kp PLUS  &kp PIPE &kp EQUAL &kp LCTRL
+                                       &trans    &trans     &trans     &trans    &trans    &trans     
                         >;
                 };
 
